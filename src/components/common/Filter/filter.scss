@@ -1,0 +1,35 @@
+@import '../../../style/fonts.scss';
+@import '../../../style/colors.scss';
+.filter {
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.07);
+  padding: 23px;
+  &__list {
+    list-style: none;
+    @media (max-width: 768px) {
+      display: inline-flex;
+      gap: 12px;
+      padding: 0;
+    }
+  }
+  &__item {
+    cursor: pointer;
+    margin-bottom: 12px;
+    font-family: $font-secondary;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    &--active {
+      cursor: pointer;
+      font-weight: 700;
+      color: $color-primary;
+      margin-bottom: 12px;
+    }
+  }
+}

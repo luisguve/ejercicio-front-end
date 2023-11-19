@@ -1,0 +1,58 @@
+@import '../../../style/colors.scss';
+@import '../../../style/fonts.scss';
+
+.card {
+  :hover {
+    .card {
+      &__title {
+        color: $color-primary;
+      }
+      &__link {
+        color: $color-primary !important;
+      }
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: $color-dark !important;
+  }
+  display: flex;
+  overflow: hidden;
+  max-width: 271px;
+  border-radius: 10px;
+  background: $color-contrast;
+  font-family: $font-secondary;
+  filter: drop-shadow(0px 4px 40px rgba(0, 0, 0, 0.07));
+
+  &__description {
+    padding: 26.3px;
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+  &__figure {
+    width: 100%;
+    height: 204px;
+    margin: 0px;
+  }
+  &__title {
+    color: $color-neutro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: 0.18px;
+  }
+  &__text {
+    color: $color-neutro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
