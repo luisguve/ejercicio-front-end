@@ -1,0 +1,38 @@
+/*Fonts*/
+
+@import './fonts.scss';
+@import './colors.scss';
+
+:root {
+  font-family: $font-secondary;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+input {
+  padding: 10px;
+  height: 27px;
+  border-color: solid 1px gray;
+  transition: 0.5s;
+  outline: none;
+  -webkit-transition: 0.5s;
+}
+
+input:focus {
+  border: 1px solid $color-primary;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
