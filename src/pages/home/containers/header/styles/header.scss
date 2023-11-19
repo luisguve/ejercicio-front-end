@@ -1,0 +1,51 @@
+@import '../../../../../style/fonts.scss';
+
+.header {
+  width: 100%;
+  height: 741px;
+  position: relative;
+  object-fit: contain;
+  image-rendering: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('.././../../../../assets/images/background-hero.png');
+  &__title {
+    top: 26.61%;
+    left: 9.17%;
+    max-width: 38.1%;
+    margin-top: 0px;
+    font-size: 120px;
+    font-weight: 700;
+    position: absolute;
+    line-height: 100px;
+    font-style: normal;
+    font-family: $font-primary, sans-serif;
+    @media (max-width: 991px) {
+      font-size: 100px;
+      line-height: 80px;
+      max-width: 50%;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 490px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      0deg,
+      #fff 0%,
+      #fff 32.22%,
+      rgba(255, 255, 255, 0.71) 61.99%,
+      rgba(255, 255, 255, 0.07) 93.72%,
+      rgba(255, 255, 255, 0) 93.72%
+    );
+  }
+  @media (max-width: 600px) {
+    background-position: left;
+  }
+}
