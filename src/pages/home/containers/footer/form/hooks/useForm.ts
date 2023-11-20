@@ -47,7 +47,7 @@ export default function useFormNewsLetter() {
       })
   }
 
-  const onError: SubmitHandler<any> = (errors, e) => {
+  const onError: SubmitHandler<any> = () => {
     alert('Revisa el formulario')
   }
 
