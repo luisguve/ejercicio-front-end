@@ -41,7 +41,7 @@ export default function useFormNewsLetter() {
         alert('La data se envió correctamente')
         setIsFetch(false)
       })
-      .catch((e) => {
+      .catch(() => {
         alert('Ha ocurrido un error')
         setIsFetch(false)
       })
